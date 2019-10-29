@@ -199,7 +199,7 @@
 						</li>
 						<li class="resume-item wow fadeInDown" data-wow-delay="0.2s">
 							<h3>Biometric Encryption</h3>
-							<h5>2007 - 2008</h5>
+							<h5>2017 - 2018</h5>
 							<p>As a final project I've proposed and developed a mechanism which will grab the minutae data from the finger prints of a particular user and will generate the key using those extracted binary matrix. The generated key is used as encryption key for CPABE. For decryption again fingerprint needs to be given</p>
 						</li>
 					</ul>
@@ -242,11 +242,9 @@
 
 	<!-- ==== Footer Section Start ==== -->
 	<footer class="footer-section spad">
-		<p>All right reserved &copy; 2017</p>
+		<p>All right reserved &copy; 2019</p>
 	</footer>
 	<!-- ==== Footer Section End ==== -->
-
-
 	<!-- ==== Jquery & Scripts==== -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -260,39 +258,5 @@
 	<script src="js/init-particles.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 	<script src="js/scripts.js"></script>
-	<script>
-		/*------------------
-			GOOGLE MAP
-		--------------------*/
-		function initialize() {
-			var myOptions = {
-				zoom: 15,
-				center: new google.maps.LatLng(40.801485408197856, -73.96745953467104), //change the coordinates
-				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				scrollwheel: true,
-				mapTypeControl: true,
-				zoomControl: true,
-				streetViewControl: true,
-				styles: [{
-					"stylers": [{
-						"hue": "#ffffff"
-					}, {
-						saturation: -110
-					}, {
-						gamma: 2
-					}]
-				}]
-			};
-			var map = new google.maps.Map(document.getElementById("map-area"), myOptions);
-			var marker = new google.maps.Marker({
-				map: map,
-				position: new google.maps.LatLng(40.801485408197856, -73.96745953467104) //change the coordinates
-			});
-			google.maps.event.addListener(marker, "click", function() {
-				infowindow.open(map, marker);
-			});
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
 </body>
 </html>
